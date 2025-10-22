@@ -1,0 +1,38 @@
+<!-- ...existing code... -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Falling Dot Hunter</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="controls" style="margin-bottom:8px;">
+  <label for="difficulty">난이도:</label>
+  <select id="difficulty">
+    <option value="2">초보 (느림)</option>
+    <option value="3" selected>중수 (보통)</option>
+    <option value="4">고수 (빠름)</option>
+    <option value="6">왕고수 (매우 빠름)</option>
+  </select>
+  <button id="startBtn">게임 시작</button>
+</div>
+
+<!-- 변경: 캔버스와 HUD를 한 행에 배치 -->
+<div class="game-area">
+  <div class="hud">
+    <div id="scoreDisplay">점수: <span id="score">0</span></div>
+    <div id="timerDisplay">남은 시간: 60초</div>
+    <div id="lifeDisplay">목숨: 3</div>
+    <button id="restartBtn" style="display:none;">다시하기</button>
+  </div>
+
+  <canvas id="gameCanvas" width="400" height="600"></canvas>
+</div>
+
+<script src="js/game.js"></script>
+
+</body>
+</html>
+<!-- ...existing code... -->
